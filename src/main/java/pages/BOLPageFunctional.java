@@ -280,13 +280,13 @@ public class BOLPageFunctional
 		                flag = webDB.isElementDisplayed(BOLPageLocators.BOL_STATUSCHANGE_CONFIRMATIONPOPUP_YES_BTN, ElementType.Xpath);
 		                if (flag) {
 		                    log.logging("info", "Selected " + statusToSelect + " option from dropdown");
-//		                    webDB.clickAnElement(BOLPageLocators.BOL_STATUSCHANGE_CONFIRMATIONPOPUP_YES_BTN, ElementType.Xpath);
-//		                    Thread.sleep(2000);
-//
-//		                    flag = webDB.isElementDisplayed(BOLPageLocators.BOL_STATUSCHANGE_CONFIRMATION_MSG, ElementType.Xpath);
-//		                    if (flag) {
-//		                        log.logging("info", "The status of BOL is changed to " + statusToSelect);
-//		                    }
+		                    webDB.clickAnElement(BOLPageLocators.BOL_STATUSCHANGE_CONFIRMATIONPOPUP_YES_BTN, ElementType.Xpath);
+		                    Thread.sleep(2000);
+
+		                    flag = webDB.isElementDisplayed(BOLPageLocators.BOL_STATUSCHANGE_CONFIRMATION_MSG, ElementType.Xpath);
+		                    if (flag) {
+		                        log.logging("info", "The status of BOL is changed to " + statusToSelect);
+		                    }
 		                }
 
 		                break; 
