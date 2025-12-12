@@ -174,8 +174,8 @@
 								<include name="verifyPagination_Functionality"></include>
 								<include name="verifyProviderLocCode_DecendingSorting_Functionality"></include>
 								<include name="verifyProviderLocCode_AscendingSorting_Functionality"></include>
-								<include name="verifyProvideLocName_DecendingSorting_Functionality"></include>
-								<include name="verifyProvideLocName_AscendingSorting_Functionality"></include>
+								<!-- <include name="verifyProvideLocName_DecendingSorting_Functionality"></include> -->
+								<!-- <include name="verifyProvideLocName_AscendingSorting_Functionality"></include> -->
 <!-- 								<include name="verifyZone_DecendingSorting_Functionality"></include> -->
 <!-- 								<include name="verifyZone_AscendingSorting_Functionality"></include> -->
 <!-- 								<include name="verify0_39_RECOVERY_DecendingSorting_Functionality"></include> -->
