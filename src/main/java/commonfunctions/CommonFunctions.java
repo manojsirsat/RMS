@@ -418,6 +418,9 @@ public class CommonFunctions
 		webDB.navigateToRefresh();
 		Thread.sleep(4000);
 		
+		webDB.clickAnElement(CommonFunctionsLocators.VIEWRESULT_BUTTON, ElementType.Xpath);
+		Thread.sleep(4000);
+		
 		flag = webDB.waitForElement(CommonFunctionsLocators.SHOWINGRESULTBOTTOM, ElementType.Xpath);
 		if(flag)
 		{
@@ -425,9 +428,9 @@ public class CommonFunctions
 			String lastNumber = getLastNumber(totalTest);
 			log.logging("info", "The total records count is "+lastNumber);
 			int totalrecordscount = Integer.parseInt(lastNumber);
-			if(totalrecordscount>20)
+			if(totalrecordscount>1)
 			{
-				log.logging("info", "Pagination is available as total records count is greater than 20.");
+//				log.logging("info", "Pagination is available as total records count is greater than 20.");
 				webDB.clickAnElement(CommonFunctionsLocators.SHOWFILTER, ElementType.Xpath);
 				Thread.sleep(1500);
 				webDB.clickAnElement(CommonFunctionsLocators.SHOWFILTERSELECTVALUE_500, ElementType.Xpath);
