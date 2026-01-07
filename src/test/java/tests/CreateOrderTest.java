@@ -4,6 +4,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 
 import org.testng.Assert;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -12,6 +13,7 @@ import commonfunctions.CommonFunctions;
 import pages.BOLPageFunctional;
 import pages.CreateOrderPageFunctional;
 import pages.loginPage;
+import utils.Mailer;
 import utils.ReportLoger;
 import utils.WebDriverBase;
 
@@ -65,10 +67,10 @@ public class CreateOrderTest
 		webDB.tearDown();
 	}
 	
-//	@AfterSuite
-//	public void SendMail() throws Exception {
-//		Mailer mailer = new Mailer();
-//		mailer.execute("RMS Automation Report");
-//	}
+	@AfterSuite
+	public void SendMail() throws Exception {
+		Mailer mailer = new Mailer();
+		mailer.execute("RMS Automation Report");
+	}
 	
 }
