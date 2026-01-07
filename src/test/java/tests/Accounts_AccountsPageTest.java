@@ -203,6 +203,13 @@ public class Accounts_AccountsPageTest
 		Assert.assertTrue(flag);
 	}
 	
+	@Test(description = "Verify create new account functionality from Account listing page")
+	public void verifyCreateNewAccount_Functionality() throws InterruptedException 
+	{
+		flag = accountspagefunctional.create_NewAccount();
+		Assert.assertTrue(flag);
+	}
+	
 	@AfterTest
 	public void browser_Close() {
 		webDB.tearDown();

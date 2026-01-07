@@ -439,6 +439,16 @@ public class BatchFilesPageFunctional
 			if(flag)
 			{
 				log.logging("info", "Clicked on process this batch button and batch file is processed");
+				flag = webDB.isElementNotDisplayed(BatchFilesPageLocators.ERRORMESSAGE, ElementType.Xpath);
+				if(flag)
+				{
+					log.logging("info", "Error message is displayed and batch file is not processed successfully");
+					flag = false;
+				}
+				else
+				{
+					flag = true;
+				}
 			}
 		}
 		else

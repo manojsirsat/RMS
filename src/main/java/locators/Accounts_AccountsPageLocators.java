@@ -70,12 +70,15 @@ public class Accounts_AccountsPageLocators
 	/**XPATH*/ public static final String SUBADDRESS_INPUTFIELD = "//input[@id='subaddress']";
 	/**XPATH*/ public static final String CITY_INPUTFIELD = "//input[@id='city']";
 	/**XPATH*/ public static final String STATE_DRPDOWN = "//div[@id='state']";
-	/**XPATH*/ public static final String STATE_DRPDOWN_OPTIONS = "//ul[@id='state_list']//li";
+	/**XPATH*/ public static final String STATE_DRPDOWN_OPTIONS = "(//ul[@id='state_list']//li)";
+	/**XPATH*/ public static final String STATEOPTION_SELECTED = "//div[@id='state']/input";
 	/**XPATH*/ public static final String ZIPCODE_INPUTFIELD = "//input[@id='zipcode']";
 	/**XPATH*/ public static final String CONTACTNAME_INPUTFIELD = "//input[@id='contact_name']";
 	/**XPATH*/ public static final String CONTACTEMAIL_INPUTFIELD = "//input[@id='contact_email']";
 	/**XPATH*/ public static final String CONTACTPHONE_INPUTFIELD = "//input[@id='contact_phone']";
-	/**XPATH*/ public static final String CREATE_BTN = "//button[@class='p-button p-component p-disabled p-button-success' and @aria-label='Create']";
+	/**XPATH*/ public static final String CONTACTPHONE_EXT_INPUTFIELD = "//input[@id='contact_extension']";
+	/**XPATH*/ public static final String CREATE_BTN = "//button[@class='p-button p-component p-button-success' and @aria-label='Create']";
+	/**XPATH*/ public static final String INVENTORYLINK_LOCATIONSUMMARYPAGE = "//a[@id='account-inventory-location-summary']";
 	
 	
 	
