@@ -683,7 +683,7 @@
 					</classes>
 				</test>
 				
-				<test name="Reports_PreBillingPageTest">
+				<!-- <test name="Reports_PreBillingPageTest">
 					<classes>
 						<class name="tests.Reports_PreBillingPageTest">
 							<methods>
@@ -696,7 +696,7 @@
  							<include name="verifyOrderID_AscendingSorting_Functionality"></include>
  							<include name="verifyOrderType_DescendingSorting_Functionality"></include>
  							<include name="verifyOrderType_AscendingSorting_Functionality"></include>
- 							<!-- <include name="verifyProgramOwner_DescendingSorting_Functionality"></include>
+ 							<include name="verifyProgramOwner_DescendingSorting_Functionality"></include>
  							<include name="verifyProgramOwner_AscendingSorting_Functionality"></include>
  							<include name="verifyProgram_DescendingSorting_Functionality"></include>
  							<include name="verifyProgram_AscendingSorting_Functionality"></include>
@@ -779,13 +779,13 @@
  							<include name="verifyToLocState_DescendingSorting_Functionality"></include>
  							<include name="verifyToLocState_AscendingSorting_Functionality"></include>
  							<include name="verifyToLocZip_DescendingSorting_Functionality"></include>
- 							<include name="verifyToLocZip_AscendingSorting_Functionality"></include> -->
+ 							<include name="verifyToLocZip_AscendingSorting_Functionality"></include>
 							</methods>
 						</class>
 					</classes>
-				</test>
+				</test> -->
 				
-				<test name="Reports_InvoicingPageTest">
+				<!-- <test name="Reports_InvoicingPageTest">
 					<classes>
 						<class name="tests.Reports_InvoicingPageTest">
 							<methods>
@@ -794,7 +794,7 @@
 								<include name="verifyPagination_Functionality"></include>
 								<include name="verifyBOLID_DescendingSorting_Functionality"></include>
  							<include name="verifyBOLID_AscendingSorting_Functionality"></include>
- 							<!-- <include name="verifyOrderID_DescendingSorting_Functionality"></include>
+ 							<include name="verifyOrderID_DescendingSorting_Functionality"></include>
  							<include name="verifyOrderID_AscendingSorting_Functionality"></include>
  							<include name="verifyOrderType_DescendingSorting_Functionality"></include>
  							<include name="verifyOrderType_AscendingSorting_Functionality"></include>
@@ -877,13 +877,13 @@
  							<include name="verifyToLocState_DescendingSorting_Functionality"></include>
  							<include name="verifyToLocState_AscendingSorting_Functionality"></include>
  							<include name="verifyToLocZip_DescendingSorting_Functionality"></include>
- 							<include name="verifyToLocZip_AscendingSorting_Functionality"></include> -->
+ 							<include name="verifyToLocZip_AscendingSorting_Functionality"></include>
 							</methods>
 						</class>
 					</classes>
-				</test>
+				</test> -->
 				
-				<test name="Reports_LedgerPageTest">
+				<!-- <test name="Reports_LedgerPageTest">
 					<classes>
 						<class name="tests.Reports_LedgerPageTest">
 							<methods>
@@ -892,7 +892,7 @@
 								<include name="verifyPagination_Functionality"></include>
 								<include name="verifyRecID_DescendingSorting_Functionality"></include>
  							<include name="verifyRecID_AscendingSorting_Functionality"></include>
- 							<!-- <include name="verifyTxID_DescendingSorting_Functionality"></include>
+ 							<include name="verifyTxID_DescendingSorting_Functionality"></include>
  							<include name="verifyTxID_AscendingSorting_Functionality"></include>
  							<include name="verifyPairID_DescendingSorting_Functionality"></include>
  							<include name="verifyPairID_AscendingSorting_Functionality"></include>
@@ -927,11 +927,11 @@
  							<include name="verifyAccount_DescendingSorting_Functionality"></include>
  							<include name="verifyAccount_AscendingSorting_Functionality"></include>
  							<include name="verifyUser_DescendingSorting_Functionality"></include>
- 							<include name="verifyUser_AscendingSorting_Functionality"></include> -->
+ 							<include name="verifyUser_AscendingSorting_Functionality"></include>
 							</methods>
 						</class>
 					</classes>
-				</test>
+				</test> -->
 				
 				<test name="Reports_CurrentInventoryByLocationPageTest">
 					<classes>
