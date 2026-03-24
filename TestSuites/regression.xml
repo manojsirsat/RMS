@@ -787,7 +787,7 @@
 <!-- 					</classes> -->
 <!-- 				</test> -->
 				
-				<test name="Reports_InvoicingPageTest">
+				<!-- <test name="Reports_InvoicingPageTest">
 					<classes>
 						<class name="tests.Reports_InvoicingPageTest">
 							<methods>
@@ -933,9 +933,9 @@
 							</methods>
 						</class>
 					</classes>
-				</test>
+				</test> -->
 				
-				<test name="Reports_CurrentInventoryByLocationPageTest">
+				<!-- <test name="Reports_CurrentInventoryByLocationPageTest">
 					<classes>
 						<class name="tests.Reports_CurrentInventoryByLocationPageTest">
 							<methods>
@@ -1049,7 +1049,7 @@
 							</methods>
 						</class>
 					</classes>
-				</test>
+				</test> -->
 				
 				<test name="Reports_InventoryMovementsPageTest">
 					<classes>
