@@ -19,7 +19,7 @@
 									<include name="verifyBOL_AscendingSorting_Functionality"></include>
 									<include name="verifyType_DecendingSorting_Functionality"></include>
 									<include name="verifyType_AscendingSorting_Functionality"></include>
-									<!-- <include name="verifyCurrentStatus_DecendingSorting_Functionality"></include>
+									<include name="verifyCurrentStatus_DecendingSorting_Functionality"></include>
 									<include name="verifyCurrentStatus_AscendingSorting_Functionality"></include>
 									<include name="verifyDueDate_DecendingSorting_Functionality"></include>
 									<include name="verifyDueDate_AscendingSorting_Functionality"></include>
@@ -68,13 +68,13 @@
 									<include name="verifyAutoAssignEligible_DecendingSorting_Functionality"></include>
 									<include name="verifyAutoAssignEligible_AscendingSorting_Functionality"></include>
 									<include name="verifyShippedByAccount_DecendingSorting_Functionality"></include>
-									<include name="verifyShippedByAccount_AscendingSorting_Functionality"></include> -->
+									<include name="verifyShippedByAccount_AscendingSorting_Functionality"></include>
 								</methods>
 							</class>
 							</classes>
 					</test>
 	
-					<!-- <test  name="CreateOrderTest">
+					<test  name="CreateOrderTest">
 						<classes>
 							<class name="tests.CreateOrderTest">
 								<methods>
@@ -601,7 +601,7 @@
 							</methods>
 						</class>
 					</classes>
-				</test> -->
+				</test>
 				
 <!-- 				<test name="Reports_LateNotificationPageTest"> -->
 <!-- 					<classes> -->
@@ -1114,7 +1114,7 @@
 							</methods>
 						</class>
 					</classes>
-				</test>
+				</test> -->
 				
 				<test name="Reports_InventoryBy99sPageTest">
 					<classes>
@@ -1386,7 +1386,6 @@
 							</methods>
 						</class>
 					</classes>
-				</test> -->
-			
+				</test>
 			
 </suite> <!-- Suite -->
