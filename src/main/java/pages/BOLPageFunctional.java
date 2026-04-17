@@ -180,7 +180,7 @@ public class BOLPageFunctional
 							if(flag)
 							{
 								int totaloptions = webDB.getDriver().findElements(By.xpath(BOLPageLocators.ORDERTYPE_DRP_OPTIONS_LIST)).size();
-								int oneoption = faker.number().numberBetween(1, totaloptions-1);
+								int oneoption = faker.number().numberBetween(1, totaloptions);
 								webDB.getDriver().findElement(By.xpath(BOLPageLocators.ORDERTYPE_DRP_OPTIONS_LIST+"["+oneoption+"]")).click();
 								Thread.sleep(3000);
 								log.logging("info", "Selected order type");
