@@ -155,29 +155,6 @@ public class BOLPageFunctional {
 	public boolean set_AddOrderToBOL() throws InterruptedException {
 		webDB.scrollToAnElement(BOLPageLocators.ADD_ORDER_BUTTON_BOLPAGE, ElementType.Xpath);
 		Thread.sleep(750);
-		flag = webDB.isElementDisplayed(BOLPageLocators.ADD_ORDER_BUTTON_BOLPAGE, ElementType.Xpath);
-				if(flag)
-				{
-					webDB.clickAnElement(BOLPageLocators.ADD_ORDER_BUTTON_BOLPAGE, ElementType.Xpath);
-					Thread.sleep(5000);
-					log.logging("info", "Clicked on add order to BOL button");
-					flag = webDB.isElementDisplayed(BOLPageLocators.CREATE_NEWORDER_BUTTON, ElementType.Xpath);
-					if(flag)
-					{
-						webDB.clickAnElement(BOLPageLocators.CREATE_NEWORDER_BUTTON, ElementType.Xpath);
-						Thread.sleep(5000);
-						flag = webDB.isElementDisplayed(BOLPageLocators.ORDERTYPE_DROPDOWN, ElementType.Id);
-						if(flag)
-						{
-							//Select order type
-							webDB.clickAnElement(BOLPageLocators.ORDERTYPE_DROPDOWN, ElementType.Id);
-							Thread.sleep(2000);
-							flag = webDB.isElementDisplayed(BOLPageLocators.ORDERTYPE_DRP_OPTION, ElementType.Id);
-							if(flag)
-							{
-								int totaloptions = webDB.getDriver().findElements(By.xpath(BOLPageLocators.ORDERTYPE_DRP_OPTIONS_LIST)).size();
-								int oneoption = faker.number().numberBetween(1, totaloptions);
-								webDB.getDriver().findElement(By.xpath(BOLPageLocators.ORDERTYPE_DRP_OPTIONS_LIST+"["+oneoption+"]")).click();
 		flag = webDB.waitForElement(BOLPageLocators.ADD_ORDER_BUTTON_BOLPAGE, ElementType.Xpath);
 		if (flag) {
 			webDB.clickAnElement(BOLPageLocators.ADD_ORDER_BUTTON_BOLPAGE, ElementType.Xpath);
@@ -196,7 +173,7 @@ public class BOLPageFunctional {
 					if (flag) {
 						int totaloptions = webDB.getDriver()
 								.findElements(By.xpath(BOLPageLocators.ORDERTYPE_DRP_OPTIONS_LIST)).size();
-						int oneoption = faker.number().numberBetween(1, totaloptions - 1);
+						int oneoption = faker.number().numberBetween(1, totaloptions);
 						webDB.getDriver()
 								.findElement(
 										By.xpath(BOLPageLocators.ORDERTYPE_DRP_OPTIONS_LIST + "[" + oneoption + "]"))
@@ -215,7 +192,6 @@ public class BOLPageFunctional {
 								webDB.getDriver().findElement(By.xpath(
 										BOLPageLocators.PROGRAM_DRP_OPTIONS_LIST + "[" + program_oneoption + "]"))
 										.click();
->>>>>>> c07b0608871f45df126660a0890b39911bf04645
 								Thread.sleep(3000);
 								log.logging("info", "Selected Program");
 								flag = webDB.waitForElement(BOLPageLocators.QUANTITY_REQUESTED_INPUTFIELD,

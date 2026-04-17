@@ -1380,7 +1380,7 @@
 					<classes>
 						<class name="tests.Help_HelpFilesPageTest">
 							<methods>
-							<include name="Verify_Valid_Login"></include>
+							<include name="verify_Valid_Login"></include>
 							<include name="Redirection_To_HelpFilesListing_Page"></include>
 							<include name="Verify_DownloadDocumentBtnFunctionality"></include>
 							</methods>
