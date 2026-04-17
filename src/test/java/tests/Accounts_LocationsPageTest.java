@@ -42,7 +42,7 @@ public class Accounts_LocationsPageTest {
 
 	@Test(description = "Verify valid login")
 	public void verify_Valid_Login() throws InterruptedException {
-		flag = loginpage.validLogin();
+		flag = loginpage.validLogin(webDB.getDataFromProperties("username"), webDB.getDataFromProperties("password"));
 		Assert.assertTrue(flag);
 	}
 
@@ -357,6 +357,13 @@ public class Accounts_LocationsPageTest {
 		flag = locationspagefunctional.Active_AscendingSorting();
 		Assert.assertTrue(flag);
 	}
+	
+	@Test(description = "Verify create new location functionality from Locations listing page")
+	public void verifyCreateNewLocation_Functionality() throws InterruptedException {
+		flag = locationspagefunctional.create_NewLocation();
+		Assert.assertTrue(flag);
+	}
+
 
 	@AfterTest
 	public void browser_Close() {

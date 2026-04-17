@@ -16,8 +16,7 @@ import utils.Mailer;
 import utils.ReportLoger;
 import utils.WebDriverBase;
 
-public class Accounts_AccountsPageTest 
-{
+public class Accounts_AccountsPageTest {
 
 	// This line used to create object for driver base class
 	WebDriverBase webDB = new WebDriverBase();
@@ -27,13 +26,12 @@ public class Accounts_AccountsPageTest
 	static CommonFunctions commonFunction = new CommonFunctions();
 	static Accounts_AccountsPageFunctional accountspagefunctional = new Accounts_AccountsPageFunctional();
 	static loginPage loginpage = new loginPage();
-	
+
 	/**
 	 * This method used to open browser before test start
 	 */
 	@BeforeTest
-	public void browser_Setup() throws FileNotFoundException, IOException, Exception
-	{
+	public void browser_Setup() throws FileNotFoundException, IOException, Exception {
 		webDB.Setup(System.getProperty("Platform"));
 		// This line used to get data from config properties
 		String SiteUrl = webDB.getDataFromProperties("url");
@@ -41,180 +39,156 @@ public class Accounts_AccountsPageTest
 		webDB.enterURL(SiteUrl);
 		Thread.sleep(2000);
 	}
-	
+
 	@Test(description = "Verify valid login")
-	public void verify_Valid_Login() throws InterruptedException 
-	{
-		flag = loginpage.validLogin();
+	public void verify_Valid_Login() throws InterruptedException {
+		flag = loginpage.validLogin(webDB.getDataFromProperties("username"), webDB.getDataFromProperties("password"));
 		Assert.assertTrue(flag);
 	}
-	
+
 	@Test(description = "Redirect to Accounts listing page")
-	public void redirection_To_AccountListing_Page() throws InterruptedException 
-	{
+	public void redirection_To_AccountListing_Page() throws InterruptedException {
 		flag = accountspagefunctional.navigate_AccountsListingPage();
 		Assert.assertTrue(flag);
 	}
-	
+
 	@Test(description = "Verify Pagination functionality of Accounts listing page")
-	public void verifyPagination_Functionality() throws InterruptedException 
-	{
+	public void verifyPagination_Functionality() throws InterruptedException {
 		flag = commonFunction.verifyPagination();
 		Assert.assertTrue(flag);
 	}
-	
+
 	@Test(description = "Verify Acct Code Descending Sorting functionality from Account listing page")
-	public void verifyAcctCode_DecendingSorting_Functionality() throws InterruptedException 
-	{
-		flag = accountspagefunctional.AcctCode_DecendingSorting();
+	public void verifyAcctCode_DecendingSorting_Functionality() throws InterruptedException {
+		flag = accountspagefunctional.acctCode_DescendingSorting();
 		Assert.assertTrue(flag);
 	}
-	
+
 	@Test(description = "Verify Acct Code Asending Sorting functionality from Account listing page")
-	public void verifyAcctCode_AscendingSorting_Functionality() throws InterruptedException 
-	{
-		flag = accountspagefunctional.AcctCode_AscendingSorting();
+	public void verifyAcctCode_AscendingSorting_Functionality() throws InterruptedException {
+		flag = accountspagefunctional.acctCode_AscendingSorting();
 		Assert.assertTrue(flag);
 	}
-	
+
 	@Test(description = "Verify Name Descending Sorting functionality from Account listing page")
-	public void verifyName_DecendingSorting_Functionality() throws InterruptedException 
-	{
-		flag = accountspagefunctional.Name_DecendingSorting();
+	public void verifyName_DecendingSorting_Functionality() throws InterruptedException {
+		flag = accountspagefunctional.name_DescendingSorting();
 		Assert.assertTrue(flag);
 	}
-	
+
 	@Test(description = "Verify Name Asending Sorting functionality from Account listing page")
-	public void verifyName_AscendingSorting_Functionality() throws InterruptedException 
-	{
-		flag = accountspagefunctional.Name_AscendingSorting();
+	public void verifyName_AscendingSorting_Functionality() throws InterruptedException {
+		flag = accountspagefunctional.name_AscendingSorting();
 		Assert.assertTrue(flag);
 	}
-	
+
 	@Test(description = "Verify Short Descending Sorting functionality from Account listing page")
-	public void verifyShort_DecendingSorting_Functionality() throws InterruptedException 
-	{
-		flag = accountspagefunctional.Short_DecendingSorting();
+	public void verifyShort_DecendingSorting_Functionality() throws InterruptedException {
+		flag = accountspagefunctional.short_DescendingSorting();
 		Assert.assertTrue(flag);
 	}
-	
+
 	@Test(description = "Verify Short Asending Sorting functionality from Account listing page")
-	public void verifySort_AscendingSorting_Functionality() throws InterruptedException 
-	{
-		flag = accountspagefunctional.Short_AscendingSorting();
+	public void verifySort_AscendingSorting_Functionality() throws InterruptedException {
+		flag = accountspagefunctional.short_AscendingSorting();
 		Assert.assertTrue(flag);
 	}
-	
+
 	@Test(description = "Verify City Descending Sorting functionality from Account listing page")
-	public void verifyCity_DecendingSorting_Functionality() throws InterruptedException 
-	{
-		flag = accountspagefunctional.City_DecendingSorting();
+	public void verifyCity_DecendingSorting_Functionality() throws InterruptedException {
+		flag = accountspagefunctional.city_DescendingSorting();
 		Assert.assertTrue(flag);
 	}
-	
+
 	@Test(description = "Verify City Asending Sorting functionality from Account listing page")
-	public void verifyCity_AscendingSorting_Functionality() throws InterruptedException 
-	{
-		flag = accountspagefunctional.City_AscendingSorting();
+	public void verifyCity_AscendingSorting_Functionality() throws InterruptedException {
+		flag = accountspagefunctional.city_AscendingSorting();
 		Assert.assertTrue(flag);
 	}
-	
+
 	@Test(description = "Verify Admin Descending Sorting functionality from Account listing page")
-	public void verifyAdmin_DecendingSorting_Functionality() throws InterruptedException 
-	{
-		flag = accountspagefunctional.Admin_DecendingSorting();
+	public void verifyAdmin_DecendingSorting_Functionality() throws InterruptedException {
+		flag = accountspagefunctional.admin_DescendingSorting();
 		Assert.assertTrue(flag);
 	}
-	
+
 	@Test(description = "Verify Admin Asending Sorting functionality from Account listing page")
-	public void verifyAdmin_AscendingSorting_Functionality() throws InterruptedException 
-	{
-		flag = accountspagefunctional.Admin_AscendingSorting();
+	public void verifyAdmin_AscendingSorting_Functionality() throws InterruptedException {
+		flag = accountspagefunctional.admin_AscendingSorting();
 		Assert.assertTrue(flag);
 	}
-	
+
 	@Test(description = "Verify Customer Descending Sorting functionality from Account listing page")
-	public void verifyCustomer_DecendingSorting_Functionality() throws InterruptedException 
-	{
-		flag = accountspagefunctional.Customer_DecendingSorting();
+	public void verifyCustomer_DecendingSorting_Functionality() throws InterruptedException {
+		flag = accountspagefunctional.customer_DescendingSorting();
 		Assert.assertTrue(flag);
 	}
-	
+
 	@Test(description = "Verify Customer Asending Sorting functionality from Account listing page")
-	public void verifyCustomer_AscendingSorting_Functionality() throws InterruptedException 
-	{
-		flag = accountspagefunctional.Customer_AscendingSorting();
+	public void verifyCustomer_AscendingSorting_Functionality() throws InterruptedException {
+		flag = accountspagefunctional.customer_AscendingSorting();
 		Assert.assertTrue(flag);
 	}
-	
+
 	@Test(description = "Verify Provider Descending Sorting functionality from Account listing page")
-	public void verifyProvider_DecendingSorting_Functionality() throws InterruptedException 
-	{
-		flag = accountspagefunctional.Provider_DecendingSorting();
+	public void verifyProvider_DecendingSorting_Functionality() throws InterruptedException {
+		flag = accountspagefunctional.provider_DescendingSorting();
 		Assert.assertTrue(flag);
 	}
-	
+
 	@Test(description = "Verify Provider Asending Sorting functionality from Account listing page")
-	public void verifyProvider_AscendingSorting_Functionality() throws InterruptedException 
-	{
-		flag = accountspagefunctional.Provider_AscendingSorting();
+	public void verifyProvider_AscendingSorting_Functionality() throws InterruptedException {
+		flag = accountspagefunctional.provider_AscendingSorting();
 		Assert.assertTrue(flag);
 	}
-	
+
 	@Test(description = "Verify Carrier Descending Sorting functionality from Account listing page")
-	public void verifyCarrier_DecendingSorting_Functionality() throws InterruptedException 
-	{
-		flag = accountspagefunctional.Carrier_DecendingSorting();
+	public void verifyCarrier_DecendingSorting_Functionality() throws InterruptedException {
+		flag = accountspagefunctional.carrier_DescendingSorting();
 		Assert.assertTrue(flag);
 	}
-	
+
 	@Test(description = "Verify Carrier Asending Sorting functionality from Account listing page")
-	public void verifyCarrier_AscendingSorting_Functionality() throws InterruptedException 
-	{
-		flag = accountspagefunctional.Carrier_AscendingSorting();
+	public void verifyCarrier_AscendingSorting_Functionality() throws InterruptedException {
+		flag = accountspagefunctional.carrier_AscendingSorting();
 		Assert.assertTrue(flag);
 	}
-	
+
 	@Test(description = "Verify Network Descending Sorting functionality from Account listing page")
-	public void verifyNetwork_DecendingSorting_Functionality() throws InterruptedException 
-	{
-		flag = accountspagefunctional.Network_DecendingSorting();
+	public void verifyNetwork_DecendingSorting_Functionality() throws InterruptedException {
+		flag = accountspagefunctional.network_DescendingSorting();
 		Assert.assertTrue(flag);
 	}
-	
+
 	@Test(description = "Verify Network Asending Sorting functionality from Account listing page")
-	public void verifyNetwork_AscendingSorting_Functionality() throws InterruptedException 
-	{
-		flag = accountspagefunctional.Network_AscendingSorting();
+	public void verifyNetwork_AscendingSorting_Functionality() throws InterruptedException {
+		flag = accountspagefunctional.network_AscendingSorting();
 		Assert.assertTrue(flag);
 	}
-	
+
 	@Test(description = "Verify Active Descending Sorting functionality from Account listing page")
-	public void verifyActive_DecendingSorting_Functionality() throws InterruptedException 
-	{
-		flag = accountspagefunctional.Active_DecendingSorting();
+	public void verifyActive_DecendingSorting_Functionality() throws InterruptedException {
+		flag = accountspagefunctional.active_DescendingSorting();
 		Assert.assertTrue(flag);
 	}
-	
+
 	@Test(description = "Verify Active Asending Sorting functionality from Account listing page")
-	public void verifyActive_AscendingSorting_Functionality() throws InterruptedException 
-	{
-		flag = accountspagefunctional.Active_AscendingSorting();
+	public void verifyActive_AscendingSorting_Functionality() throws InterruptedException {
+		flag = accountspagefunctional.active_AscendingSorting();
 		Assert.assertTrue(flag);
 	}
-	
+
 	@Test(description = "Verify create new account functionality from Account listing page")
-	public void verifyCreateNewAccount_Functionality() throws InterruptedException 
-	{
+	public void verifyCreateNewAccount_Functionality() throws InterruptedException {
 		flag = accountspagefunctional.create_NewAccount();
 		Assert.assertTrue(flag);
 	}
-	
+
 	@AfterTest
 	public void browser_Close() {
 		webDB.tearDown();
 	}
-	
+
 //	@AfterSuite
 //	public void SendMail() throws Exception {
 //		Mailer mailer = new Mailer();
