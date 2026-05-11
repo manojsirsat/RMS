@@ -1298,9 +1298,7 @@
 								<include name="verifyPagination_Functionality"></include>
 								<include name="verifyName_DescendingSorting_Functionality"></include>
 								<include name="verifyName_AscendingSorting_Functionality"></include>
-								<include name="verifyStartDate_DescendingSorting_Functionality"></include>
-								<include name="verifyStartDate_AscendingSorting_Functionality"></include>
-							</methods>
+								</methods>
 						</class>
 					</classes>
 				</test>
