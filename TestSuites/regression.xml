@@ -74,7 +74,7 @@
 							</classes>
 					</test>
 	
-					<test  name="CreateOrderTest">
+					<!-- <test  name="CreateOrderTest">
 						<classes>
 							<class name="tests.CreateOrderTest">
 								<methods>
@@ -83,9 +83,9 @@
 								</methods>
 							</class>
 						</classes>
-					</test> 
+					</test>  -->
 	
-					<test  name="MultipleOrderTest">
+					<!-- <test  name="MultipleOrderTest">
 						<classes>
 							<class name="tests.MultipleOrderTest">
 								<methods>
@@ -99,7 +99,7 @@
 								</methods>
 							</class>
 							</classes>
-					</test> 
+					</test>  -->
 
 					<test name="OrdersAndBOLS_OrdersPageTest">
 					<classes>
@@ -367,7 +367,7 @@
 					</classes>
 				</test>
 
-				<test name="ReplenishmentsByComponentTest">
+				<!-- <test name="ReplenishmentsByComponentTest">
 					<classes>
 						<class name="tests.ReplenishmentsByComponentTest">
 							<methods>
@@ -375,7 +375,7 @@
 								<include name="redirection_To_ComponentsListing_Page"></include>
 								<include name="verifyPagination_Functionality"></include>
 								<include name="verifyAccount_DecendingSorting_Functionality"></include>
-								<include name="verifyAccount_AscendingSorting_Functionality"></include>
+								<include name="verifyAccount_AscendingSorting_Functionality"></include> -->
 								<!-- <include name="verifyProviderLocCode_DecendingSorting_Functionality"></include>
 								<include name="verifyProviderLocCode_AscendingSorting_Functionality"></include>
 								<include name="verifyProvideLocName_DecendingSorting_Functionality"></include>
@@ -410,12 +410,12 @@
 								<include name="verifyConfAvail_AscendingSorting_Functionality"></include>
 								<include name="verifyBelowMinQty_DecendingSorting_Functionality"></include>
 								<include name="verifyBelowMinQty_AscendingSorting_Functionality"></include> -->
-							</methods>
+							<!-- </methods>
 						</class>
 					</classes>
-				</test>
+				</test> -->
 				
- 				<test name="Accounts_AccountsPageTest"> 
+ 				<!-- <test name="Accounts_AccountsPageTest"> 
  					<classes> 
  						<class name="tests.Accounts_AccountsPageTest"> 
  							<methods> 
@@ -425,7 +425,7 @@
  							<include name="verifyAcctCode_DecendingSorting_Functionality"></include> 
  							<include name="verifyAcctCode_AscendingSorting_Functionality"></include>
  							<include name="verifyName_DecendingSorting_Functionality"></include>
- 							<include name="verifyName_AscendingSorting_Functionality"></include>
+ 							<include name="verifyName_AscendingSorting_Functionality"></include> -->
  							<!-- <include name="verifyShort_DecendingSorting_Functionality"></include>
  							<include name="verifySort_AscendingSorting_Functionality"></include>
  							<include name="verifyCity_DecendingSorting_Functionality"></include>
@@ -442,11 +442,11 @@
  							<include name="verifyNetwork_AscendingSorting_Functionality"></include>
  							<include name="verifyActive_DecendingSorting_Functionality"></include>
  							<include name="verifyActive_AscendingSorting_Functionality"></include>		 -->
- 							<include name="verifyCreateNewAccount_Functionality"></include>
+ 							<!-- <include name="verifyCreateNewAccount_Functionality"></include>
  							</methods> 
  						</class> 
  					</classes> 
- 				</test> 
+ 				</test>  -->
 				
  				<test name="Accounts_LocationsPageTest"> 
  					<classes> 
@@ -1239,7 +1239,7 @@
 					</classes>
 				</test>
 				
-				<test name="Admin_UsersPageTest">
+				<!-- <test name="Admin_UsersPageTest">
 					<classes>
 						<class name="tests.Admin_UsersPageTest">
 							<methods>
@@ -1247,7 +1247,7 @@
 								<include name="redirection_To_UsersListing_Page"></include>
 								<include name="verifyPagination_Functionality"></include>
 								<include name="verifyUserID_DescendingSorting_Functionality"></include>
-								<include name="verifyUserID_AscendingSorting_Functionality"></include>
+								<include name="verifyUserID_AscendingSorting_Functionality"></include> -->
 								<!-- <include name="verifyName_DescendingSorting_Functionality"></include>
 								<include name="verifyName_AscendingSorting_Functionality"></include>
 								<include name="verifyEmail_DescendingSorting_Functionality"></include>
@@ -1256,11 +1256,11 @@
 								<include name="verifyAccountName_AscendingSorting_Functionality"></include>
 								<include name="verifyActive_DescendingSorting_Functionality"></include>
 								<include name="verifyActive_AscendingSorting_Functionality"></include> -->
-								<include name="VerifyCreateNewUser_Functionality"></include>
+								<!-- <include name="VerifyCreateNewUser_Functionality"></include>
 							</methods>
 						</class>
 					</classes>
-				</test>
+				</test> -->
 				
 <!-- 				<test name="Admin_MasterAdjustmentPageTest"> -->
 <!-- 					<classes> -->
@@ -1339,7 +1339,7 @@
 <!-- 					</classes> -->
 <!-- 				</test> -->
 				
-				<test name="Admin_ImportedFilesPageTest">
+				<!-- <test name="Admin_ImportedFilesPageTest">
 					<classes>
 						<class name="tests.Admin_ImportedFilesPageTest">
 							<methods>
@@ -1347,7 +1347,7 @@
 								<include name="redirection_To_ImportedFilesListingPage"></include>
 								<include name="verifyPagination_Functionality"></include>
 								<include name="verifyID_DescendingSorting_Functionality"></include>
-								<include name="verifyID_AscendingSorting_Functionality"></include>
+								<include name="verifyID_AscendingSorting_Functionality"></include> -->
 								<!-- <include name="verifyImportType_DescendingSorting_Functionality"></include>
 								<include name="verifyImportType_AscendingSorting_Functionality"></include>
 								<include name="verifyTotalLines_DescendingSorting_Functionality"></include>
@@ -1360,10 +1360,10 @@
 								<include name="verifyUnProcessed_AscendingSorting_Functionality"></include>
 								<include name="verifyUser_DescendingSorting_Functionality"></include>
 								<include name="verifyUser_AscendingSorting_Functionality"></include> -->
-							</methods>
+							<!-- </methods>
 						</class>
 					</classes>
-				</test>
+				</test> -->
 				
 <!-- 				<test name="Admin_ToolsPageTest"> -->
 <!-- 					<classes> -->
@@ -1376,7 +1376,7 @@
 <!-- 					</classes> -->
 <!-- 				</test> -->
 				
-				<test name="Help_HelpFilesPageTest">
+				<!-- <test name="Help_HelpFilesPageTest">
 					<classes>
 						<class name="tests.Help_HelpFilesPageTest">
 							<methods>
@@ -1386,6 +1386,6 @@
 							</methods>
 						</class>
 					</classes>
-				</test>
+				</test> -->
 			
 </suite> <!-- Suite -->

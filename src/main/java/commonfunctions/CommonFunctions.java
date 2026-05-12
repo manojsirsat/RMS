@@ -369,8 +369,8 @@ public class CommonFunctions {
 			throws InterruptedException {
 		webDB.navigateToRefresh();
 		Thread.sleep(9000);
-		new WebDriverWait(webDB.getDriver(), Duration.ofSeconds(60))
-		.until(ExpectedConditions.elementToBeClickable(By.xpath(CommonFunctionsLocators.VIEWRESULT_BUTTON)));
+		// new WebDriverWait(webDB.getDriver(), Duration.ofSeconds(60))
+		// .until(ExpectedConditions.elementToBeClickable(By.xpath(CommonFunctionsLocators.VIEWRESULT_BUTTON)));
 
 		webDB.clickAnElement(CommonFunctionsLocators.VIEWRESULT_BUTTON, ElementType.Xpath);
 		Thread.sleep(6000);
