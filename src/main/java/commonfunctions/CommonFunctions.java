@@ -425,12 +425,12 @@ public class CommonFunctions {
 			throws InterruptedException {
 		// Get back to Page 1
 //		WebDriverWait wait = new WebDriverWait(webDB.getDriver(), Duration.ofSeconds(20));
-//		new WebDriverWait(webDB.getDriver(), Duration.ofSeconds(60))
-//				.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@aria-label='First Page']")));
-//		webDB.clickAnElementWithoutException("//button[@aria-label='First Page']", ElementType.Xpath);
-//		Thread.sleep(45000);
+		new WebDriverWait(webDB.getDriver(), Duration.ofSeconds(60))
+				.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@aria-label='First Page']")));
+		webDB.clickAnElementWithoutException("//button[@aria-label='First Page']", ElementType.Xpath);
+		Thread.sleep(45000);
 
-		Thread.sleep(4000);
+		// Thread.sleep(4000);
 		new WebDriverWait(webDB.getDriver(), Duration.ofSeconds(60))
 				.until(ExpectedConditions.elementToBeClickable(By.xpath(ColumnHeader)));
 		
