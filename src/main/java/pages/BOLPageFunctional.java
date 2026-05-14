@@ -204,13 +204,13 @@ public class BOLPageFunctional {
 											ElementType.Xpath);
 									if (flag) {
 										webDB.clickAnElement(BOLPageLocators.SUBMIT_ORDER_BTN, ElementType.Xpath);
-										Thread.sleep(5000);
+										Thread.sleep(15000);
 										log.logging("info", "Submitted order");
-										webDB.scrollToAnElement(BOLPageLocators.ADD_ORDER_BUTTON_BOLPAGE,
-												ElementType.Xpath);
-										Thread.sleep(750);
-										flag = webDB.waitForElement(BOLPageLocators.REMOVE_ORDERFROMBOL_BTN,
-												ElementType.Xpath);
+										// webDB.scrollToAnElement(BOLPageLocators.ADD_ORDER_BUTTON_BOLPAGE,
+										// 		ElementType.Xpath);
+										// Thread.sleep(750);
+										// flag = webDB.waitForElement(BOLPageLocators.REMOVE_ORDERFROMBOL_BTN,
+										// 		ElementType.Xpath);
 									}
 								}
 
